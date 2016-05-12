@@ -30,8 +30,8 @@
                                     <action selector="showNextQuestion:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ckD-cp-ZFW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19u-vB-DiB">
-                                <rect key="frame" x="254" y="285" width="93" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="19u-vB-DiB">
+                                <rect key="frame" x="254" y="284" width="93" height="30"/>
                                 <state key="normal" title="Show Answer"/>
                                 <connections>
                                     <action selector="showAnswer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEF-is-6V7"/>
@@ -43,8 +43,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gy-3e-pHi">
-                                <rect key="frame" x="287.5" y="28" width="25" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gy-3e-pHi">
+                                <rect key="frame" x="279" y="28" width="42" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -53,21 +53,23 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="D7c-C6-5KG" firstAttribute="top" secondItem="ggP-SC-rEw" secondAttribute="bottom" constant="169" id="BNz-C3-Hf7"/>
+                            <constraint firstItem="ggP-SC-rEw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KOd-Dx-9Ng"/>
                             <constraint firstItem="19u-vB-DiB" firstAttribute="top" secondItem="D7c-C6-5KG" secondAttribute="bottom" constant="8" id="Nci-Vg-j6c"/>
-                            <constraint firstItem="D7c-C6-5KG" firstAttribute="centerX" secondItem="ggP-SC-rEw" secondAttribute="centerX" id="Nlk-9v-iBl"/>
                             <constraint firstItem="JIR-wn-Fqc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="QE7-Mx-zSi"/>
-                            <constraint firstItem="5gy-3e-pHi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QiL-tI-ReD"/>
                             <constraint firstItem="JIR-wn-Fqc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RaH-RY-Loj"/>
-                            <constraint firstItem="JIR-wn-Fqc" firstAttribute="centerX" secondItem="ggP-SC-rEw" secondAttribute="centerX" id="Vt5-zx-YKS"/>
+                            <constraint firstItem="5gy-3e-pHi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Trr-3B-p44"/>
                             <constraint firstItem="5gy-3e-pHi" firstAttribute="top" secondItem="JIR-wn-Fqc" secondAttribute="top" id="XZh-IU-tGE"/>
-                            <constraint firstItem="ggP-SC-rEw" firstAttribute="top" secondItem="JIR-wn-Fqc" secondAttribute="bottom" constant="8" id="ize-nY-DQU"/>
-                            <constraint firstItem="19u-vB-DiB" firstAttribute="centerX" secondItem="ggP-SC-rEw" secondAttribute="centerX" id="rqd-Ff-532"/>
+                            <constraint firstItem="ggP-SC-rEw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="36" id="Ywe-fw-1AG"/>
+                            <constraint firstItem="19u-vB-DiB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cGy-4B-Fxg"/>
+                            <constraint firstItem="D7c-C6-5KG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ubz-Zf-JXe"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="answerLabel" destination="D7c-C6-5KG" id="PUe-m1-vyC"/>
                         <outlet property="currentQuestionLabel" destination="JIR-wn-Fqc" id="xo7-gq-hkD"/>
+                        <outlet property="currentQuestionLabelCenterXConstraint" destination="RaH-RY-Loj" id="jCj-bp-jJW"/>
                         <outlet property="nextQuestionLabel" destination="5gy-3e-pHi" id="wam-eh-RW9"/>
+                        <outlet property="nextQuestionLabelCenterXConstraint" destination="Trr-3B-p44" id="b7h-YX-5QR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
